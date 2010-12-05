@@ -1,0 +1,222 @@
+/* GLOBAL SECTION ================================================================================= */
+html, body { height: 100%; margin: 0; padding: 0;}
+body { background-color: #f3f3f3; font:12px 'arial'; color: #555555; }
+a { color: #C01313; }	
+a:hover { }
+ul { margin: 0; padding: 0; }
+p { margin: 0 0 10px;  line-height:160%; }
+img	{ border: 0; }
+.list { padding: 0 0 10px 35px; }
+.list li{ padding: 5px 0; }
+
+hr { border: 0; border-top:1px solid #C01313; margin:45px auto 20px; width:500px; }
+
+/* clears */
+.col-main:after, .col-content:after
+{ clear:both; content:"."; display:block; font-size:0; height:0; line-height:0; overflow:hidden; }
+
+/* headings */
+h1 { font-size: 34px; color: #c01313; margin: 0; padding: 0; }
+h2 { font-size: 18px; margin: 35px 0 10px; color: #c01313; font-weight: normal;  }
+h3 { font-size: 13px; clear: both; margin: 0; line-height:170%; }
+.title { clear: left; margin: 35px 0 10px; }
+.title h2{ margin: 0; }
+.sub-title { font-size: 11px; display: block; color: #555; }
+
+/* code */
+pre {  margin: 5px 0 35px; width: 922px; padding: 2px; border: 1px solid #ccc; position: relative; }
+code { padding: 5px 30px; display: block; background-color: #efefef; margin: 0;  overflow: auto;}
+
+/* ------------- WRAPPER SECTION -------------- */
+#wrapper {}
+#wrapper-inner { position: relative; width: 970px; margin: 0 auto;  }
+
+/* ------------- COLUMNS SECTION -------------- */
+#col-left { width: 250px; position: relative; float: left; }
+#col-main { background-color: #fff; display: block; overflow: hidden; }
+#col-right { width: 175px; position: relative; float: left; }
+
+.col-head, .col-foot, .col-head .end, .col-foot .end { background:url(../images/design/bg-col-block.png) no-repeat 0 0 transparent; }
+
+.col-head { background-position:0 0; height:5px; display: block; padding:0 0 0 20px; }
+.col-head .end { background-position:100% 0; height:5px; }
+.col-foot { background-position:0 100%; height:25px; display: block; overflow: hidden; padding:0 0 0 20px; }
+.col-foot .end { background-position:100% 100%; height:25px; }
+.col-content{ padding: 1px 20px 10px; border: 1px solid #d0d0d0; overflow: hidden; border-width: 0 1px; }
+
+/* ------------- HEADER SECTION -------------- */
+#header { height: 90px; display: block; padding: 10px 0 0 10px; position: relative; overflow: hidden; z-index: 100; }
+#header h1, header h1 { width: 500px; padding: 10px 0 0; }
+.slogan { width: 500px; padding: 5px 0 0 5px; display: block; }
+.crest { float: left; margin: 0 10px 0 0; }
+.block-download{ position: absolute; right: 20px; top: 25px; }
+.download { display: block; color: #fff; margin: 0 0 10px; text-decoration: none; font-size: 16px; text-align: center; background:url("../images/design/download.png") no-repeat scroll 0 0 transparent; width: 194px; padding: 9px 0 0 0; height: 29px; }
+
+/* ------------- COLUMN MAIN BLOCKS -------------- */
+
+.block-menu { border-top:1px solid #C0C0C0; margin:35px 0 0 35px; width:295px; list-style: none; float: right; clear: right; }
+.block-menu li { display: inline; }
+.block-menu a {  border-bottom:1px solid #C0C0C0; padding: 0 0 0 5px; display: block; line-height: 35px; }
+.block-menu a:hover { background-color: #f1f1f1; }
+.googlead { width: 300px; margin: 15px 0 0 35px; float: right; clear: right;}
+.items { list-style: none; width: 500px; }
+.items li { overflow: hiddden; padding: 0 0 20px; }
+.items p { clear: both;  }
+.button {  white-space: nowrap; color: #c01313;  }
+.foot { font-size: 11px; }
+.beer { float: right }
+.googlead p { line-height: 200%; padding: 0 0 0 15px; }
+.addthis_toolbox { display:inline-block; }
+
+#twitter_div { margin-top: 0; }
+#twitter_div ul { margin: 0; padding: 0;  list-style: none; }
+#twitter_div li 			{ padding: 10px;  border-bottom:1px solid #C0C0C0;  }
+#twitter_div li:hover 		{ background-color: #f1f1f1; }
+#twitter_div span 			{ display: block; }
+#twitter_div span a 		{ font-size: 11px; font-weight: normal; margin: 3px 0; }
+.twitter-link a{ background:url(../images/design/twitter-bird.png) no-repeat 5px 50% transparent; border: 0; padding: 5px 0 0 45px;}
+
+/* Examples - Tiny Carousel */
+#slider1 { height: 1%; overflow:hidden; padding: 0 0 10px;   }
+#slider1 .viewport { float: left; width: 240px; height: 125px; overflow: hidden; position: relative; }
+#slider1 .buttons { background:url("../images/design/buttons.png") no-repeat scroll 0 0 transparent; display: block; margin: 30px 10px 0 0; background-position: 0 -38px; text-indent: -999em; float: left; width: 39px; height: 37px; overflow: hidden; position: relative; }
+#slider1 .next { background-position: 0 0; margin: 30px 0 0 10px;  }
+#slider1 .disable { visibility: hidden; }
+#slider1 .overview { list-style: none; position: absolute; width: 240px; left: 0 top: 0; }
+#slider1 .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; border: 1px solid #dcdcdc; width: 236px;}
+
+#slider2 { height: 1%; overflow:hidden; position: relative; padding: 0 0 10px;   }
+#slider2 .viewport { float: left; width: 780px; height: 125px; overflow: hidden; position: relative; }
+#slider2 .buttons { background:url("../images/design/buttons.png") no-repeat scroll 0 0 transparent; display: block; margin: 30px 10px 0 0; background-position: 0 -38px; text-indent: -999em; float: left; width: 39px; height: 37px; overflow: hidden; position: relative; }
+#slider2 .next { background-position: 0 0; margin: 30px 0 0 10px; }
+#slider2 .disable { visibility: hidden; }
+#slider2 .overview { list-style: none; position: absolute; width: 240px; left: 0 top: 0; }
+#slider2 .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; border: 1px solid #dcdcdc; width: 236px;}
+
+#slider3 { height: 1%; overflow:hidden; padding: 0 0 10px 0; }
+#slider3 .viewport { width: 240px; height: 125px; float: left; overflow: hidden; position: relative; }
+#slider3 .pager { overflow:hidden; list-style: none; clear: both; margin: 0 0 0 45px; }
+#slider3 .pager li { float: left; }
+#slider3 .buttons { background:url("../images/design/buttons.png") no-repeat scroll 0 0 transparent; display: block; margin: 30px 10px 0 0; background-position: 0 -38px; text-indent: -999em; float: left; width: 39px; height: 37px; overflow: hidden; position: relative; }
+#slider3 .next { background-position: 0 0; margin: 30px 0 0 10px; }
+#slider3 .disable { visibility: hidden; }
+#slider3 .pagenum { background-color: #fff; text-decoration: none; text-align: center; padding: 5px; color: #555555; font-size: 14px; font-weight: bold; display: block; }
+#slider3 .active { color: #fff; background-color:  #555555; }
+#slider3 .overview { list-style: none; position: absolute; width: 240px; left: 0 top: 0; }
+#slider3 .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; border: 1px solid #dcdcdc; width: 236px;}
+
+#slider4 { height: 1%; overflow:hidden; display: block; padding: 0 0 10px 0; margin: 0 0 0 50px;}
+#slider4 .viewport { width: 500px; height: 257px; overflow: hidden; position: relative; }
+#slider4 .pager { overflow:hidden; height: 1%; list-style: none; clear: both; margin: 0 0 10px; }
+#slider4 .pager li { float: left; }
+#slider4 .pagenum { background-color: #fff; text-decoration: none; text-align: center; padding: 5px; color: #555555; font-size: 14px; font-weight: bold; display: block; }
+#slider4 .active { color: #fff; background-color:  #555555; }
+#slider4 .overview { list-style: none; position: absolute; width: 500px; left: 0 top: 0; }
+#slider4 .overview .page{ float: left; padding: 5px; height: 245px; border: 1px solid #dcdcdc; width: 488px;}
+
+#slider5 { height: 1%; overflow:hidden; padding: 0 0 10px; margin: 0 0 0 50px;  }
+#slider5 .viewport { width: 240px; height: 125px; overflow: hidden; position: relative; }
+#slider5 .buttons { background:url("../images/design/buttons.png") no-repeat scroll 0 0 transparent; display: block; margin: 0 0 5px 100px; background-position: 0 -74px; text-indent: -999em; width: 39px; height: 37px; overflow: hidden; position: relative; }
+#slider5 .next { background-position: 0 -112px; margin: 5px 0 0 100px;  }
+#slider5 .disable { visibility: hidden; }
+#slider5 .overview { list-style: none; position: absolute; width: 240px; left: 0 top: 0; }
+#slider5 .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; border: 1px solid #dcdcdc; width: 236px;}
+
+/* Examples - Tiny Scrollbar */
+#scrollbar1 { width: 520px; margin: 20px 0 10px; }
+#scrollbar1 .viewport { width: 500px; height: 200px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+#scrollbar1 .scrollbar,
+#scrollbar1 .thumb .end,
+#scrollbar1 .thumb { background: transparent url(../images/design/bg-scrollbar.png) no-repeat; }
+#scrollbar1 .scrollbar { position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track	{ background: transparent url(../images/design/bg-scrollbar-end.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background-position: 100% 100%; height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 1px; }
+#scrollbar1 .thumb .end { background-position: 100% 0; height: 5px; width: 13px; }
+#scrollbar1 .disable { display: none; }
+
+#scrollbar2 { width: 251px; margin: 20px 0 10px; }
+#scrollbar2 .viewport { width: 236px; height: 125px; overflow: hidden; position: relative; }
+#scrollbar2 .overview { list-style: none; width: 1416px; padding: 0; margin: 0; position: absolute; left: 0; top: 0;  }
+#scrollbar2 .overview img{ float: left; }
+#scrollbar2 .scrollbar,
+#scrollbar2 .thumb .end,
+#scrollbar2 .thumb { background: transparent url(../images/design/bg-scrollbar-x.png) no-repeat; }
+#scrollbar2 .scrollbar { position: relative; overflow: hidden;  margin: 0 0 5px; clear: both; height: 15px; }
+#scrollbar2 .track { background: transparent url(../images/design/bg-scrollbar-x-end.png) no-repeat 100% 0; width: 100%; height:13px; position: relative; padding: 1px 0; }
+#scrollbar2 .thumb { background-position: 100% -15px; height: 13px; cursor: pointer; overflow: hidden; position: absolute; left: 0; top: 1px; }
+#scrollbar2 .thumb .end{ overflow: hidden; background-position: 0 -15px; height: 13px; width: 5px;}
+#scrollbar2 .disable { display: none; }
+
+#scrollbar3 { width: 320px;  margin: 20px 0 10px; }
+#scrollbar3 .viewport { width: 300px; height: 300px; overflow: hidden; position: relative; }
+#scrollbar3 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+#scrollbar3 .scrollbar,
+#scrollbar3 .thumb .end,
+#scrollbar3 .thumb { background: transparent url(../images/design/bg-scrollbar.png) no-repeat; }
+#scrollbar3 .scrollbar { position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar3 .track	{ background: transparent url(../images/design/bg-scrollbar-end.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar3 .thumb { background-position: 100% 100%; height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left:1px; }
+#scrollbar3 .thumb .end { overflow: hidden; background-position: 100% 0; height: 5px; width: 13px; }
+#scrollbar3 .disable { display: none; }
+
+#scrollbar4 { width: 520px;  margin: 20px 0 10px; }
+#scrollbar4 .viewport { width: 500px; height: 200px; overflow: hidden; position: relative; }
+#scrollbar4 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+#scrollbar4 .scrollbar,
+#scrollbar4 .thumb .end,
+#scrollbar4 .thumb { background: transparent url(../images/design/bg-scrollbar.png) no-repeat 0 0; }
+#scrollbar4 .scrollbar { position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar4 .track	{ background: transparent url(../images/design/bg-scrollbar-end.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar4 .thumb { background-position: 100% 100%; height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left:1px;}
+#scrollbar4 .thumb .end { overflow: hidden; background-position: 100% 0; height: 5px; width: 13px; }
+#scrollbar4 .disable { display: none; }
+
+#scrollbar5 { width: 520px;  overflow: hidden; margin: 20px 0 10px; }
+#scrollbar5 .viewport { width: 500px; height: 200px; overflow: hidden; position: relative; }
+#scrollbar5 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+#scrollbar5 .scrollbar,
+#scrollbar5 .thumb .end,
+#scrollbar5 .thumb { background: transparent url(../images/design/bg-scrollbar.png) no-repeat 0 0; }
+#scrollbar5 .scrollbar { position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar5 .track	{ background: transparent url(../images/design/bg-scrollbar-end.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar5 .thumb { background-position: 100% 100%; height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left:1px;}
+#scrollbar5 .thumb .end { overflow: hidden; background-position: 100% 0; height: 5px; width: 13px; }
+#scrollbar5 .disable { display: none; }
+#scroll5text { display: none;}
+#scroll5text2 { display: none;}
+#scroll5text3 { display: none;}
+#scroll5load { display:block; float:left; padding: 0 10px; line-height:33px;}
+#scroll5load2 { display:block; float:left; line-height:33px; padding: 0 10px; }
+#scroll5load3 { display:block; float:left; line-height:33px; padding: 0 10px; }
+
+/* Examples - Tiny Circleslider */
+#rotatescroll1 { height:300px; position:relative; width:300px; }
+#rotatescroll1 .viewport{ height:300px; position: relative; margin:0 auto; overflow:hidden; width:300px }
+#rotatescroll1 .overview { position: absolute; width: 798px; list-style: none; margin: 0; padding: 0;  left: 0; top: 0; }
+#rotatescroll1 .overview li { height:300px; width:300px; float: left; position: relative; }
+#rotatescroll1 .overlay {background:url(../images/design/bg-rotatescroll.png) no-repeat 0 0;  position: absolute; left: 0; top: 0; height:300px; width:300px; }
+#rotatescroll1 .thumb { background:url(../images/design/bg-thumb.png) no-repeat 0 0; position: absolute; top: -3px; cursor: pointer; left: 137px; width: 26px; z-index: 200;  height: 26px; }
+#rotatescroll1 .dot { background:url(../images/design/bg-dot2.png) no-repeat 0 0; display: none; height: 12px; width: 12px; position: absolute; left: 155px; top: 3px; z-index: 100; }
+#rotatescroll1 .dot span { display: none; }
+
+#rotatescroll2 { height:300px; position:relative; width:300px; }
+#rotatescroll2 .viewport{ height:300px; position: relative; margin:0 auto; overflow:hidden; width:300px }
+#rotatescroll2 .overview { position: absolute; width: 798px; list-style: none; margin: 0; padding: 0;  left: 0; top: 0; }
+#rotatescroll2 .overview li { height:300px; width:300px; float: left; position: relative; }
+#rotatescroll2 .overlay {background:url(../images/design/bg-rotatescroll.png) no-repeat 0 0;  position: absolute; left: 0; top: 0; height:300px; width:300px; }
+#rotatescroll2 .thumb { background:url(../images/design/bg-thumb.png) no-repeat 0 0; position: absolute; top: -3px; cursor: pointer; left: 137px; width: 26px; z-index: 200;  height: 26px; }
+#rotatescroll2 .dot { background:url(../images/design/bg-dot2.png) no-repeat 0 0; display: none; height: 12px; width: 12px; position: absolute; left: 155px; top: 3px; z-index: 100; }
+#rotatescroll2 .dot span { display: none; }
+
+#rotatescroll3 { height:350px; padding: 25px; position:relative; width:350px; }
+#rotatescroll3 .viewport{ height:350px; position: relative; margin:0 auto; overflow:hidden; width:350px }
+#rotatescroll3 .overview { background-color: #efefef; position: absolute; width: 798px; list-style: none; margin: 0; padding: 0;  left: 0; top: 0; }
+#rotatescroll3 .overview li { height:350px; width:350px; margin: 0 20px 0 0; float: left; position: relative; }
+#rotatescroll3 .overlay {background:url(../images/design/bg-rotatescroll2.png) no-repeat 0 0;  position: absolute; left: 0; top: 0; height:400px; width:400px; }
+#rotatescroll3 .thumb { background:url(../images/design/bg-thumb.png) no-repeat 0 0; position: absolute; top: -3px; cursor: pointer; left: 137px; width: 26px; z-index: 200;  height: 26px; }
+#rotatescroll3 .dot { cursor: pointer; background:url(../images/design/bg-dot3.png) no-repeat 0 0; height: 22px; text-align: center; line-height: 22px; font-size: 10px; color: #555; width: 22px; position: absolute; left: 155px; top: 3px; z-index: 100; }
+#rotatescroll3 .dot span { cursor: pointer; }
+
+/* ------------- FOOTER SECTION -------------- */
+.footer { padding:10px 0; display: block; text-align:center; }
